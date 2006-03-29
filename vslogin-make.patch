@@ -1,0 +1,13 @@
+--- vserverauth/vslogin/Makefile~	2004-01-18 06:30:17.000000000 +0200
++++ vserverauth/vslogin/Makefile	2006-03-29 21:31:16.000000000 +0300
+@@ -1,7 +1,9 @@
+ OUT=vslogin
++CFLAGS=
++CC=gcc
+ 
+ $(OUT): vslogin.c
+-	gcc -Wall -o $@ $<
++	$(CC) -Wall $(CFLAGS) -o $@ $<
+ 
+ clean:
+ 	rm -f $(OUT)
