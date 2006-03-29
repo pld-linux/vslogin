@@ -1,7 +1,7 @@
 Summary:	Virtual Server Login
 Name:		vslogin
 Version:	0
-Release:	0.1
+Release:	0.6
 License:	public domain
 Group:		Base
 Source0:	http://dev.call2ru.com/vserverauth.tar.gz
@@ -10,6 +10,7 @@ Patch0:		%{name}-make.patch
 URL:		http://linux-vserver.org/HowtoSSHLogin
 Requires(post):	grep
 Requires(post,preun):	sed >= 4.0
+Requires:	nss_vserver
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sbindir		/sbin
@@ -53,4 +54,4 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc readme
-%attr(755,root,root) %{_sbindir}/vslogin
+%attr(4750,root,vserver) %{_sbindir}/vslogin
