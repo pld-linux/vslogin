@@ -1,5 +1,5 @@
 Summary:	Virtual Server Login
-Summary(pl.UTF-8):   Login dla wirtualnych serwerów
+Summary(pl.UTF-8):	Login dla wirtualnych serwerów
 Name:		vslogin
 Version:	0
 Release:	0.6
