@@ -1,5 +1,5 @@
 Summary:	Virtual Server Login
-Summary(pl):	Login dla wirtualnych serwerÛw
+Summary(pl.UTF-8):   Login dla wirtualnych serwer√≥w
 Name:		vslogin
 Version:	0
 Release:	0.6
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 vslogin allows virtual users to log directly in to their vserver, scp,
 etc.
 
-%description -l pl
-vslogin pozwala wirtualnym uøytkownikom na logowanie bezpo∂rednio do
-ich vserverÛw, wykonywanie scp itp.
+%description -l pl.UTF-8
+vslogin pozwala wirtualnym u≈ºytkownikom na logowanie bezpo≈õrednio do
+ich vserver√≥w, wykonywanie scp itp.
 
 %prep
 %setup -q -n vserverauth
