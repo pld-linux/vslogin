@@ -28,7 +28,7 @@ ich vserverów, wykonywanie scp itp.
 
 %prep
 %setup -q -n vserverauth
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} -C vslogin \
